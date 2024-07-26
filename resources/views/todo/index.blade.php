@@ -6,16 +6,19 @@
     <table border="1">
         <thead>
             <tr>
-                <th>ID</th>
+                <th>No</th>
                 <th>Todo</th>
                 <th>Keterangan</th>
                 <th>Aksi</th>
             </tr>
         </thead>
         <tbody>
+        <?php 
+                $no =1;
+            ?>
             @foreach($todos as $todo)
             <tr>
-                <td>{{ $todo->id }}</td>
+                <td>{{ $no++ }}</td>
                 <td>{{ $todo->todo }}</td>
                 <td>{{ $todo->keterangan }}</td>
                 <td>

@@ -63,10 +63,10 @@ class TodoController extends Controller
             "keterangan" => $keterangan,
         ]);
         //Pilih ATASHHH/BAWAH Semuah Boleh Boleh
-        $editTodo = Todo::where("id", $id)->first();
-        $editTodo->todo = $todo;
-        $editTodo->keterangan = $keterangan;
-        $editTodo->save();
+        // $editTodo = Todo::where("id", $id)->first();
+        // $editTodo->todo = $todo;
+        // $editTodo->keterangan = $keterangan;
+        // $editTodo->save();
 
         return redirect("/todo");
     }
